@@ -15882,7 +15882,7 @@ header nav .collapse ul li {
   background-image: url("../img/services/service-1.jpg");
   background-size: contain;
   height: 200px;
-  width: 400px;
+  width: 450px;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -15892,6 +15892,7 @@ header nav .collapse ul li {
   flex-direction: column;
   color: white;
   font-family: Poppins-light;
+  color: bleu;
 }
 
 .sliders .row .living hr {
@@ -15904,7 +15905,7 @@ header nav .collapse ul li {
   background-image: url("../img/services/service-2.jpg");
   background-size: contain;
   height: 200px;
-  width: 400px;
+  width: 450px;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -15944,63 +15945,16 @@ header nav .collapse ul li {
   width: 200px;
 }
 
-.produit {
-  height: 150vh;
-}
-
-.produit .container .row .bag {
-  background-image: url("../img/products_mini/product-bag.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .bed {
-  background-image: url("../img/products_mini/product-bed.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .cups {
-  background-image: url("../img/products_mini/product-cups.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .gloves {
-  background-image: url("../img/products_mini/product-gloves.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .luxury {
-  background-image: url("../img/products_mini/product-luxry-sofa.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .modern {
-  background-image: url("../img/products_mini/product-modern-sofa.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .plates {
-  background-image: url("../img/products_mini/product-plates.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .shoes {
-  background-image: url("../img/products_mini/product-shoes.jpg");
-  height: 100px;
-  width: 100px;
-}
-
-.produit .container .row .tshirt {
-  background-image: url("../img/products_mini/product-shoes.jpg");
-  background-size: contain;
-  height: 100px;
-  width: 100px;
+.banner2 .ma-baniere {
+  background-image: url(../img/cta-bg.jpg);
+  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: Poppins-Light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-attachment: fixed;
 }
