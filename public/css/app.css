@@ -15945,6 +15945,18 @@ header nav .collapse ul li {
   width: 200px;
 }
 
+.cards .box {
+  height: 255px;
+  margin-top: 90px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.cards .box .row {
+  display: flex;
+  justify-content: center;
+}
+
 .banner2 .ma-baniere {
   background-image: url(../img/cta-bg.jpg);
   height: 600px;
@@ -15957,4 +15969,40 @@ header nav .collapse ul li {
   flex-direction: column;
   color: white;
   background-attachment: fixed;
+}
+
+footer .text-center {
+  background: black;
+}
+
+@media screen and (max-width: 760px) {
+  .banner .displai .T-shirt img {
+    display: none;
+  }
+  .sliders .row {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cards .box {
+    height: auto;
+  }
+  .cards .box .ok {
+    margin-right: 0;
+  }
+  .cards .box .no {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 991px) {
+  .cards .box {
+    height: auto;
+  }
 }
