@@ -16107,3 +16107,29 @@ footer .container .row .col-lg-5 .text-uppercase {
 .carousel h3 {
   position: absolute;
 }
+
+#connexion {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 700px;
+  height: 600px;
+  position: fixed;
+  left: 30vw;
+  top: 10vh;
+  z-index: 999;
+  display: none;
+  font-family: Poppins-Light;
+}
+
+#connexion i {
+  font-size: 24px;
+}
+
+#connexion .fb {
+  color: #4021f0df;
+}
+
+#connexion .snap {
+  color: #fbff26;
+}

@@ -18,7 +18,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav" id="navbar">
+                <ul class="navbar-nav" id="navbar" style="
+                align-items: baseline";
+            >
                     <li id="emporium2">
                         <h1>emporium.</h1>
                     </li>
@@ -43,7 +45,8 @@
                     <li><button class="blanc mr-2" type="submit"></button>
                         <button class="black mr-2" type="submit" style="
                         background-color: black"></button></li>
-                    <button type="button" class="sign btn-outline-secondary">connexion</button>
+                    <button type="button" class="sign btn-outline-secondary" style="
+                    align-self: center">connexion</button>
 
                 </ul>
             </div>
@@ -53,6 +56,79 @@
 
     <!-- section 1 -->
     <section class="banner">
+        <!-- MODALE -->
+        <!-- modal connexion -->
+        <div id="connexion" class="co">
+            <!-- entete avec btn fermer  -->
+            <button class="fermer bg-rouge text-white float-right ">x</button>
+            <h1 class="font-weight-bold">emporium.</h1>
+            <div class=" d-flex justify-content-center align-items-center">
+                <button type="button" class="btn connexion btn-danger mx-1 text-white">Connexion</button>
+                <button type="button" class="btn btn-danger inscription text-white">Inscription</button>
+            </div>
+
+            <!-- PREMIER MODALE-->
+            <div class="modale1 p-2 " id="modale1">
+                <div class="champ my-2 d-flex flex-column">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="**********" class="col-10">
+                        </div>
+                        <div class="submit my-2">
+                            <input type="checkbox" value="Check"> Check me out
+                        </div>
+                        <button type="button" class="btnshop btn-primary text-white mx-3">Submit</button>
+                    </div>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline">
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- DEUXIEME MODALE -->
+            <div class="modale1 p-2 d-none" id="modale2">
+                <div class="champ my-2 d-flex flex-column align-items-center">
+                    <div class="email col-10 offset-md-1">
+                        <h5>Email address</h5>
+                        <input type="text" placeholder="abcdef@gmail.com" class="col-10">
+                        <p class="text-muted">We'll never share your email with anynone else.</p>
+                        <div class="mdp my-2">
+                            <h5>Password</h5>
+                            <input type="password" placeholder="********" class="col-10">
+                        </div>
+                        <div class="confirm my-2">
+                            <h5>Confirm your password</h5>
+                            <input type="password" placeholder="********" class="col-10">
+                        </div>
+                        <div class="form-check my-2 ">
+                            <input type="checkbox" value="femme">
+                            <label for="form-check-label">Femme</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="homme">
+                            <label for="form-check-label">Homme</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary  text-white mx-3">Inscription</button>
+                    <div class="reseaux my-3 mx-auto">
+                        <ul class=" list-inline">
+                            <li class="list-inline-item"><i class="fab fa-facebook-f fb"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram insta"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-snapchat-ghost snap"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-laptop-code pc"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="displai">
             <div class="Titre">
                 <h3>Shop at</h3>

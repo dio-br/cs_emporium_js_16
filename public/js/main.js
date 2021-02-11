@@ -50,7 +50,7 @@ span2[0].addEventListener('click',maCarou);
 
 
 let header = document.getElementById('header')
-let emporium2 = document.querySelector('#emporium')
+let emporium2 = document.querySelector('#emporium2')
 
 let sticky = header.offsetTop
 
@@ -95,6 +95,7 @@ console.log(light)
         // pararecents.style.color = "white";
         // header.style.color = "black"
         header.style.backgroundColor = "black"
+        emporium2.style.color ='white'
     })
     
             // LIGHT MODE
@@ -110,6 +111,46 @@ console.log(light)
         });
         discover.style.color = "black"
         header.style.backgroundColor = "white"
+        emporium2.style.color ='black'
     })
 
+    console.log(emporium2);
 // --------------------- MODAL -------------------------------
+
+// CONNEXION / SUBSCRIPTION
+
+let connexion = document.querySelector('#modale1')
+let inscription = document.querySelector('#modale2')
+let btnConnexion = document.querySelector('.connexion')
+let btnSubs = document.querySelector('.inscription')
+let btnSign = document.querySelector('.sign')
+let popUp = document.querySelector('#connexion')
+let btnClose = document.querySelector('.fermer')
+
+    // CONNEXION
+
+btnConnexion.addEventListener('click', () => {
+    if (connexion.classList.contains('d-none')) {
+        connexion.classList.remove('d-none')
+    }
+    inscription.classList.add('d-none')
+})   
+btnSign.addEventListener('click', () => {
+    popUp.style.display = "block"
+})
+btnClose.addEventListener('click', () => {
+    popUp.style.display = "none"
+})
+btnSign.addEventListener('click', () => {
+    if (connexion.classList.contains('d-none')) {
+        connexion.classList.remove('d-none')
+    }
+    inscription.classList.add('d-none')
+})
+
+btnSubs.addEventListener('click', () => {
+    if (inscription.classList.contains('d-none')) {
+        inscription.classList.remove('d-none')
+    }
+    connexion.classList.add('d-none')
+})
