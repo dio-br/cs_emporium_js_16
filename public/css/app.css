@@ -15822,7 +15822,10 @@ a.text-dark:hover, a.text-dark:focus {
 header h1 {
   text-align: center;
   font-family: Poppins-bold;
-  margin-top: 10px;
+}
+
+header nav {
+  height: 120px;
 }
 
 header nav .collapse {
@@ -15839,6 +15842,20 @@ header nav .collapse ul {
 
 header nav .collapse ul li {
   margin: 10px;
+}
+
+header nav .collapse ul li #emporium2 {
+  display: none;
+  width: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 2px solid grey;
 }
 
 .banner .displai {
@@ -16024,18 +16041,17 @@ footer .text-center {
 
 .carousel span {
   position: absolute;
-  top: 40%;
+  top: 45%;
   font-size: 60px;
   font-weight: bold;
   color: purple;
   cursor: pointer;
-  left: 5%;
+  left: 1%;
   z-index: 1;
 }
 
 .carousel span:nth-of-type(2) {
   left: 98%;
-  text-align: right;
 }
 
 .carousel .my-item {
@@ -16049,7 +16065,7 @@ footer .text-center {
 
 .carousel .my-item img {
   width: 330px;
-  height: 200px;
+  height: 250px;
   position: relative;
   left: 0;
   text-align: center;
