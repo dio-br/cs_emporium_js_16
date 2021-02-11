@@ -1,9 +1,16 @@
 header
     h1
         text-align: center
-        font-family: Poppins-bold
+        font-family: Poppins-Light
+        margin-top: 10px
     nav
-        height: 120px
+        font-family: Poppins-Light
+        .nav1
+            @include media-breakpoint-only(sm)
+            display: flex
+            justify-content: center
+            align-items: center
+            left: 50%
         .collapse 
             display: flex
             align-items: center
@@ -14,19 +21,16 @@ header
                 margin: 10px
                 li
                     margin: 10px
-                    #emporium2
-                        display: none
-                        width: auto
-                    #white
-                        width: 20px
-                        height: 20px
+                    .black, .blanc
                         border-radius: 5px
-                        background-color: white
-                    #black
-                        width: 20px
-                        height: 20px
-                        border-radius: 5px
-                        background-color: black
+                        height: 30px
+                        width: 30px
+                        border: 1px solid grey
+                .sign
+                    width: 130px
+                    height: 50px
+                #emporium2
+                    display: none
 .sticky 
     position: fixed
     top: 0

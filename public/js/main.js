@@ -47,69 +47,69 @@ span2[0].addEventListener('click',maCarou);
 
 // navbar scroll 
 
-let header = document.querySelector("#myHeader");
-let emporium2 = document.querySelector('#emporium2');
-let monTitre = document.querySelector('.myTitle');
 
-console.log(header);
-console.log(emporium2);
-console.log(monTitre);
 
-// renvoie la distance entre l'élément courant et le haut du nœud offsetParent.
-let sticky = header.offsetTop;
+let header = document.getElementById('header')
+let emporium2 = document.querySelector('#emporium')
 
+let sticky = header.offsetTop
 
 function myFunction() {
-    if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    emporium2.style.display = "flex"
-    monTitre.style.display = "none"
+    if (window.pageYOffset>sticky) {
+        header.classList.add("sticky")
+        emporium2.style.display = "flex"
+        emporium.style.display = "none"
     } else {
-    header.classList.remove("sticky");
-    emporium2.style.display = "none"
-    monTitre.style.display = "block"
+        header.classList.remove("sticky")
+        emporium2.style.display = "none"
+        emporium.style.display = "block"
     }
 }
-// exécute la fonction quand on scroll
-window.onscroll = function() {myFunction()};
+
+window.onscroll = function(){myFunction()}
 
 // ---------------------- MODE DARK AND WHITE -------------------------
 
-let listNavbar = document.querySelectorAll('.nav-link');
-let white = document.querySelector('#white');
-let black = document.querySelector('#black');
-let titreCarte = document.querySelector('#titreCarte');
-let cartes = document.querySelectorAll('.card-title')
-let titreFashion = document.querySelector('#fashion');
+let dark = document.querySelector(".black")
+let light = document.querySelector(".blanc")
+let emporium = document.querySelector(".empo")
+let navbar = document.querySelectorAll("#monA")
+let recents = document.getElementById("titreCarte")
+let pararecents = document.querySelectorAll("#fashion")
+let discover = document.querySelector(".Check")
+console.log(dark);
+console.log(light)
 
-
-// DARK MODE
-black.addEventListener('click', () => {
-    document.body.style.backgroundColor = "black";
-    monTitre.style.color = "white";
-    listNavbar.forEach(element => {
-        element.style.color = "white"
-    });
-    titreCarte.style.color = "white";
-    cartes.forEach(element => {
-        element.style.color = "white"
-    });
-    titreFashion.style.color = "white"
-})
-
-// WHITE MODE 
-white.addEventListener('click', () => {
-    document.body.style.backgroundColor = "white";
-    monTitre.style.color = "black";
-    listNavbar.forEach(element => {
-        element.style.color = "black"
-    });
-    titreCarte.style.color = "black";
-    cartes.forEach(element => {
-        element.style.color = "black"
-    });
-    titreFashion.style.color = "black"
-})
-
+     // DARK MODE
+    dark.addEventListener('click', () => {
+        document.body.style.backgroundColor = "black";
+        emporium.style.color = "white";
+        navbar.forEach(element => {
+            element.style.color = "white"
+        });
+        recents.style.color = "white";
+        pararecents.forEach(element => {
+            element.style.color = "white"
+        });
+        discover.style.color = "white"
+        // pararecents.style.color = "white";
+        // header.style.color = "black"
+        header.style.backgroundColor = "black"
+    })
+    
+            // LIGHT MODE
+    light.addEventListener('click', () => {
+        document.body.style.backgroundColor = "white"
+        emporium.style.color = "black"
+        navbar.forEach(element => {
+            element.style.color = "black"
+        });
+        recents.style.color = "black";
+        pararecents.forEach(element => {
+            element.style.color = "black"
+        });
+        discover.style.color = "black"
+        header.style.backgroundColor = "white"
+    })
 
 // --------------------- MODAL -------------------------------

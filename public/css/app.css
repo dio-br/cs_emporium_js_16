@@ -15821,11 +15821,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 header h1 {
   text-align: center;
-  font-family: Poppins-bold;
+  font-family: Poppins-Light;
+  margin-top: 10px;
 }
 
 header nav {
-  height: 120px;
+  font-family: Poppins-Light;
+}
+
+header nav .nav1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
 }
 
 header nav .collapse {
@@ -15844,23 +15852,20 @@ header nav .collapse ul li {
   margin: 10px;
 }
 
-header nav .collapse ul li #emporium2 {
+header nav .collapse ul li .black, header nav .collapse ul li .blanc {
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid grey;
+}
+
+header nav .collapse ul .sign {
+  width: 130px;
+  height: 50px;
+}
+
+header nav .collapse ul #emporium2 {
   display: none;
-  width: auto;
-}
-
-header nav .collapse ul li #white {
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  background-color: white;
-}
-
-header nav .collapse ul li #black {
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  background-color: black;
 }
 
 .sticky {
