@@ -72,3 +72,44 @@ function myFunction() {
 }
 // exécute la fonction quand on scroll
 window.onscroll = function() {myFunction()};
+
+// ---------------------- MODE DARK AND WHITE -------------------------
+
+let listNavbar = document.querySelectorAll('.nav-link');
+let white = document.querySelector('#white');
+let black = document.querySelector('#black');
+let titreCarte = document.querySelector('#titreCarte');
+let cartes = document.querySelectorAll('.card-title')
+let titreFashion = document.querySelector('#fashion');
+
+
+// DARK MODE
+black.addEventListener('click', () => {
+    document.body.style.backgroundColor = "black";
+    monTitre.style.color = "white";
+    listNavbar.forEach(element => {
+        element.style.color = "white"
+    });
+    titreCarte.style.color = "white";
+    cartes.forEach(element => {
+        element.style.color = "white"
+    });
+    titreFashion.style.color = "white"
+})
+
+// WHITE MODE 
+white.addEventListener('click', () => {
+    document.body.style.backgroundColor = "white";
+    monTitre.style.color = "black";
+    listNavbar.forEach(element => {
+        element.style.color = "black"
+    });
+    titreCarte.style.color = "black";
+    cartes.forEach(element => {
+        element.style.color = "black"
+    });
+    titreFashion.style.color = "black"
+})
+
+
+// --------------------- MODAL -------------------------------

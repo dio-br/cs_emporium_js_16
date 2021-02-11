@@ -15849,6 +15849,20 @@ header nav .collapse ul li #emporium2 {
   width: auto;
 }
 
+header nav .collapse ul li #white {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+header nav .collapse ul li #black {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: black;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -15963,7 +15977,7 @@ header nav .collapse ul li #emporium2 {
 }
 
 .cards .box {
-  height: 255px;
+  height: 295px;
   margin-top: 90px;
   display: flex;
   margin-bottom: 60px;
@@ -15971,7 +15985,7 @@ header nav .collapse ul li #emporium2 {
 
 .cards .box .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .banner2 .ma-baniere {
@@ -15988,11 +16002,18 @@ header nav .collapse ul li #emporium2 {
   background-attachment: fixed;
 }
 
+footer .container .row .col-lg-5 .text-uppercase {
+  text-align: initial;
+}
+
 footer .text-center {
   background: black;
 }
 
 @media screen and (max-width: 760px) {
+  header .sticky {
+    display: none;
+  }
   .banner .displai .T-shirt img {
     display: none;
   }
@@ -16016,6 +16037,10 @@ footer .text-center {
   .cards .box .no {
     margin-right: 0;
   }
+}
+
+footer .container .row .col-lg-5 .text-uppercase {
+  text-align: center;
 }
 
 @media screen and (min-width: 761px) and (max-width: 991px) {
@@ -16072,4 +16097,8 @@ footer .text-center {
   padding-top: 60px;
   margin: 10px 20px;
   transition: 0.5s;
+}
+
+.carousel h3 {
+  position: absolute;
 }
