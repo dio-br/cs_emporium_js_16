@@ -16139,12 +16139,16 @@ footer .container .row .col-lg-5 .text-uppercase {
   overflow: hidden;
 }
 
-.items .card-deck .card .card-img-top:hover {
+.items .card-deck .card img {
+  height: 300px;
+}
+
+.items .card-deck .card:hover {
   transform: scale(1.1);
   transition: all 1s;
 }
 
-.items .card-deck .card .card-img-top::before {
+.items .card-deck .card:hover::before {
   content: "View Details";
   position: absolute;
   background-color: #000;
@@ -16153,12 +16157,12 @@ footer .container .row .col-lg-5 .text-uppercase {
   opacity: 0.8;
   padding-top: 10px;
   bottom: 0;
-  animation: products 0.5s;
+  animation: card 0.5s;
   animation-fill-mode: forwards;
   max-width: 50%;
 }
 
-.items .card-deck .card .card-img-top::after {
+.items .card-deck .card:hover::after {
   content: "Add to Card";
   position: absolute;
   background-color: #f51313;
@@ -16167,7 +16171,7 @@ footer .container .row .col-lg-5 .text-uppercase {
   opacity: 0.8;
   padding-top: 10px;
   bottom: 0;
-  animation: products 0.5s;
+  animation: card 0.5s;
   animation-fill-mode: forwards;
   max-width: 50%;
   left: 50%;

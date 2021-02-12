@@ -3,10 +3,11 @@
         .card
             position: relative
             overflow: hidden
-            .card-img-top
-                &:hover
-                    transform: scale(1.1)
-                    transition: all 1s
+            img
+                height: 300px
+            &:hover
+                transform: scale(1.1)
+                transition: all 1s
                 &::before
                     content: "View Details"
                     position: absolute
@@ -16,7 +17,7 @@
                     opacity: 0.8
                     padding-top: 10px
                     bottom: 0
-                    animation: products 0.5s 
+                    animation: card 0.5s 
                     animation-fill-mode: forwards
                     max-width: 50%
                 &::after
@@ -28,7 +29,7 @@
                     opacity: 0.8
                     padding-top: 10px
                     bottom: 0
-                    animation: products 0.5s 
+                    animation: card 0.5s 
                     animation-fill-mode: forwards
                     max-width: 50%
                     left: 50%
