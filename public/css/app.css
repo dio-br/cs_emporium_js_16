@@ -16054,58 +16054,54 @@ footer .container .row .col-lg-5 .text-uppercase {
   }
 }
 
-.carousel {
-  width: 100%;
-  height: 400px;
-  margin: 100px auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel h2 {
-  width: 88%;
-  margin: 10px auto;
+.hot {
   font-family: Poppins-Light;
-  text-align: center;
 }
 
-.carousel span {
-  position: absolute;
-  top: 45%;
-  font-size: 60px;
+.hot .carousel {
+  font-family: Poppins-Light;
+  overflow: hidden;
+  width: 49vw;
+  margin: 0 5vw;
   font-weight: bold;
-  color: purple;
-  cursor: pointer;
-  left: 1%;
-  z-index: 1;
-}
-
-.carousel span:nth-of-type(2) {
-  left: 98%;
-}
-
-.carousel .my-item {
-  width: 98%;
-  height: 300px;
-  margin: 10px auto;
-  display: flex;
-  justify-content: left;
-  overflow-x: auto;
-}
-
-.carousel .my-item img {
-  width: 330px;
-  height: 250px;
-  position: relative;
-  left: 0;
   text-align: center;
-  padding-top: 60px;
-  margin: 10px 20px;
-  transition: 0.5s;
 }
 
-.carousel h3 {
-  position: absolute;
+@media (max-width: 767.98px) {
+  .hot .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    margin-left: 0px;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .hot .carousel {
+    width: 90vw;
+  }
+}
+
+.hot .carousel .sale {
+  padding: 5px;
+  text-align: center;
+}
+
+.none {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: black;
+  font-size: 22px;
+  color: black;
+  text-decoration: underline;
+}
+
+.none a {
+  color: black;
 }
 
 #connexion {
@@ -16134,56 +16130,142 @@ footer .container .row .col-lg-5 .text-uppercase {
   color: #fbff26;
 }
 
-.items .card-deck .card {
+.cartes {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.cartes .container .row {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cartes .container .row .col-4 div {
+  width: 100%;
+}
+
+.cartes .container .row .col-4 .divImg {
+  display: block;
   position: relative;
   overflow: hidden;
 }
 
-.items .card-deck .card img {
-  height: 300px;
+.cartes .container .row .col-4 .divImg img {
+  max-width: 100%;
+  transition: transform 0.5s;
+  position: relative;
 }
 
-.items .card-deck .card:hover {
+.cartes .container .row .col-4 .divImg img:hover {
   transform: scale(1.1);
-  transition: all 1s;
 }
 
-.items .card-deck .card:hover::before {
-  content: "View Details";
+.cartes .container .row .col-4 .divImg .divEtiquette {
   position: absolute;
-  background-color: #000;
-  text-align: center;
-  color: white;
-  opacity: 0.8;
-  padding-top: 10px;
-  bottom: 0;
-  animation: card 0.5s;
-  animation-fill-mode: forwards;
-  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  bottom: -20%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
-.items .card-deck .card:hover::after {
-  content: "Add to Card";
-  position: absolute;
-  background-color: #f51313;
-  text-align: center;
+.cartes .container .row .col-4 .divImg .divEtiquette div {
   color: white;
-  opacity: 0.8;
-  padding-top: 10px;
-  bottom: 0;
-  animation: card 0.5s;
-  animation-fill-mode: forwards;
-  max-width: 50%;
-  left: 50%;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes card {
-  0% {
-    width: 100%;
-    height: 0%;
+.cartes .container .row .col-4 .divImg .divEtiquette div:nth-child(1) {
+  background-color: black;
+  width: 50%;
+}
+
+.cartes .container .row .col-4 .divImg .divEtiquette div:nth-child(2) {
+  background-color: red;
+  width: 50%;
+}
+
+.cartes .container .row .col-4 .divImg:hover .divEtiquette {
+  opacity: 1;
+  bottom: 0;
+}
+
+.cartes .container .row span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media (max-width: 991.98px) {
+  .cartes .container .row span {
+    font-size: 20px;
   }
-  100% {
-    width: 100%;
-    height: 20%;
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row span {
+    font-size: 15px;
+  }
+}
+
+.cartes .container .row .row {
+  display: flex;
+}
+
+.cartes .container .row .row .col-6 button {
+  height: 50px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+
+@media (max-width: 991.98px) {
+  .cartes .container .row .row .col-6 button {
+    margin: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row .row .col-6 button {
+    margin: auto;
+    height: 30px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row .row .col-6 .promo {
+    display: flex;
+  }
+}
+
+.cartes .container .row .row .col-6 .promo del {
+  color: #545557;
+  opacity: 0.6;
+}
+
+.cartes .container .row .prix {
+  font-size: 17px;
+}
+
+@media (max-width: 767.98px) {
+  .cartes .container .row .prix {
+    font-size: 12px;
   }
 }

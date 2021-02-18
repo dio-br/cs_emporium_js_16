@@ -1,47 +1,29 @@
-let span = document.getElementsByClassName('left');
-let span2 = document.getElementsByClassName('right');
-let div = document.getElementsByClassName('oui');
-var l = 0;
+// CAROUSEL
+let item1 = document.querySelector('.item1')
+let item2 = document.querySelector('.item2')
+let item3 = document.querySelector('.item3')
+let item4 = document.querySelector('.item4')
+let carou = document.querySelector('.carou')
 
+item1.addEventListener('click', () => {
+    carou.style.transform = "translateX(0%)"
+    carou.style.transition = "2s"
+})
 
-let maCarou = () => {
-    l++;
-    for(var i of div)
-    {
-        if (l==0) {i.style.left = '0px';
-        }
-        if (l==1) {i.style.left = '-800px';
-        }
-        if (l==2) {i.style.left = '-1600px';
-        }
-        if (l==3) {i.style.left = '0px';
-        }
-        // if (l==4) {i.style.left = '-2960px';
-        // }
-        if (l>3) {l=0}
-    }
-}
+item2.addEventListener('click', () => {
+    carou.style.transform = "translateX(-300px)"
+    carou.style.transition = "2s"
+})
 
+item3.addEventListener('click', () => {
+    carou.style.transform = "translateX(-600px)"
+    carou.style.transition = "2s"
+})
 
-let maCaro = () => {
-    l--;
-    for(var i of div)
-    {
-        if (l==0) {i.style.left = '0px';
-        }
-        if (l==1) {i.style.left = '-800px';
-        }
-        if (l==2) {i.style.left = '-1600px';
-        }
-        if (l==3) {i.style.left = '-2220px';
-        }
-        // if (l==4) {i.style.left = '-2960px';
-        // }
-        if (l<0) {l=0}
-    }
-}
-span[0].addEventListener('click',maCaro);
-span2[0].addEventListener('click',maCarou);
+item4.addEventListener('click', () => {
+    carou.style.transform = "translateX(-900px)"
+    carou.style.transition = "2s"
+})
 
 
 
@@ -51,6 +33,8 @@ span2[0].addEventListener('click',maCarou);
 
 let header = document.getElementById('header')
 let emporium2 = document.querySelector('#emporium2')
+let myNav = document.querySelector('nav')
+console.log(myNav);
 
 let sticky = header.offsetTop
 
@@ -59,6 +43,7 @@ function myFunction() {
         header.classList.add("sticky")
         emporium2.style.display = "flex"
         emporium.style.display = "none"
+        popUp.style = "z-index: 1000"
     } else {
         header.classList.remove("sticky")
         emporium2.style.display = "none"
@@ -127,8 +112,11 @@ let btnSign = document.querySelector('.sign')
 let popUp = document.querySelector('#connexion')
 let btnClose = document.querySelector('.fermer')
 
+// CONNEXION / SUBSCRIPTION
+
     // CONNEXION
 
+    
 btnConnexion.addEventListener('click', () => {
     if (connexion.classList.contains('d-none')) {
         connexion.classList.remove('d-none')
@@ -137,9 +125,16 @@ btnConnexion.addEventListener('click', () => {
 })   
 btnSign.addEventListener('click', () => {
     popUp.style.display = "block"
+    // btnSign.style.zIndex = "1"
+    document.body.style.overflow='hidden'
+    div1.style= "width: 100%; height: 100%;  background-color: rgba(0,0,0,.5); z-index: 999; position: fixed;"
+    myNav.style.display = "none"
 })
 btnClose.addEventListener('click', () => {
     popUp.style.display = "none"
+    document.body.style.overflow= null
+    div1.style= " display:none "
+    myNav.style.display = "flex"
 })
 btnSign.addEventListener('click', () => {
     if (connexion.classList.contains('d-none')) {
